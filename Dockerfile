@@ -1,7 +1,7 @@
 FROM python:3.10.2-buster
 LABEL GeoNode development team
 
-RUN mkdir -p /usr/src/{{project_name}}
+RUN mkdir -p /usr/src/infomapnode
 
 # Enable postgresql-client-13
 RUN echo "deb http://apt.postgresql.org/pub/repos/apt/ buster-pgdg main" | tee /etc/apt/sources.list.d/pgdg.list
@@ -45,8 +45,8 @@ RUN pip install pylibmc \
     && pip install sherlock
 
 # add bower and grunt command
-COPY src /usr/src/{{project_name}}/
-WORKDIR /usr/src/{{project_name}}
+COPY src /usr/src/infomapnode/
+WORKDIR /usr/src/infomapnode
 
 COPY src/monitoring-cron /etc/cron.d/monitoring-cron
 RUN chmod 0644 /etc/cron.d/monitoring-cron
@@ -56,8 +56,8 @@ RUN service cron start
 
 COPY src/wait-for-databases.sh /usr/bin/wait-for-databases
 RUN chmod +x /usr/bin/wait-for-databases
-RUN chmod +x /usr/src/{{project_name}}/tasks.py \
-    && chmod +x /usr/src/{{project_name}}/entrypoint.sh
+RUN chmod +x /usr/src/infomapnode/tasks.py \
+    && chmod +x /usr/src/infomapnode/entrypoint.sh
 
 COPY src/celery.sh /usr/bin/celery-commands
 RUN chmod +x /usr/bin/celery-commands
@@ -66,10 +66,10 @@ COPY src/celery-cmd /usr/bin/celery-cmd
 RUN chmod +x /usr/bin/celery-cmd
 
 # # Install "geonode-contribs" apps
-# RUN cd /usr/src; git clone https://github.com/GeoNode/geonode-contribs.git -b master
+RUN cd /usr/src; git clone https://github.com/GeoNode/geonode-contribs.git -b master
 # # Install logstash and centralized dashboard dependencies
-# RUN cd /usr/src/geonode-contribs/geonode-logstash; pip install --upgrade  -e . \
-#     cd /usr/src/geonode-contribs/ldap; pip install --upgrade  -e .
+RUN cd /usr/src/geonode-contribs/geonode-logstash; pip install -e . \
+    cd /usr/src/geonode-contribs/ldap; pip install -e .
 
 RUN pip install --upgrade --no-cache-dir  --src /usr/src -r requirements.txt
 RUN pip install --upgrade  -e .
@@ -81,4 +81,4 @@ RUN rm -rf /var/lib/apt/lists/*
 EXPOSE 8000
 
 # We provide no command or entrypoint as this image can be used to serve the django project or run celery tasks
-# ENTRYPOINT /usr/src/{{project_name}}/entrypoint.sh
+# ENTRYPOINT /usr/src/infomapnode/entrypoint.sh

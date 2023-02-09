@@ -13,4 +13,4 @@ jobs:
       - name: Backporting
         uses: tibdex/backport@v1.0.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: $

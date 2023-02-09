@@ -220,6 +220,215 @@
         }
     },
     {
+        "pk": 21,
+        "model": "base.topiccategory",
+        "fields": {
+            "description": "Information about species and species distribution",
+            "gn_description": "Species",
+            "is_choice": true,
+            "fa_class": "fa-leaf",
+            "identifier": "species"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "base.topiccategory",
+        "fields": {
+            "description": "Information about the habitat classification",
+            "gn_description": "Habitat types",
+            "is_choice": true,
+            "fa_class": "fa-leaf",
+            "identifier": "habitatTypes"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "base.topiccategory",
+        "fields": {
+            "description": "Information about protected and other designated sites across the Mediterranean Sea",
+            "gn_description": "Sites of interest",
+            "is_choice": true,
+            "fa_class": "fa-leaf",
+            "identifier": "sitesOfInterest"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "base.topiccategory",
+        "fields": {
+            "description": "information about administrative boundaries",
+            "gn_description": "Administrative unit",
+            "is_choice": true,
+            "fa_class": "fa-ellipsis-h",
+            "identifier": "administrativeUnit"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "base.topiccategory",
+        "fields": {
+            "description": "map base map to support visualization",
+            "gn_description": "Topographic",
+            "is_choice": true,
+            "fa_class": "fa-ellipsis-h",
+            "identifier": "topographic"
+        }
+    },
+    {
+        "pk": 26,
+        "model": "base.topiccategory",
+        "fields": {
+            "description": "images to support visualization or provide general information",
+            "gn_description": "Satellite images",
+            "is_choice": true,
+            "fa_class": "fa-ellipsis-h",
+            "identifier": "satelliteImages"
+        }
+    },
+    {
+        "pk": 27,
+        "model": "base.topiccategory",
+        "fields": {
+            "description": "Information about geophysical parameters",
+            "gn_description": "Bathymetry/Seafloor topography",
+            "is_choice": true,
+            "fa_class": "fa-anchor",
+            "identifier": "bathymetrySeafloorTopography"
+        }
+    },
+    {
+        "pk": 28,
+        "model": "base.topiccategory",
+        "fields": {
+            "description": "Salinity",
+            "gn_description": "Salinity",
+            "is_choice": true,
+            "fa_class": "fa-anchor",
+            "identifier": "salinity"
+        }
+    },
+    {
+        "pk": 29,
+        "model": "base.topiccategory",
+        "fields": {
+            "description": "Surface temperature",
+            "gn_description": "Surface temperature",
+            "is_choice": true,
+            "fa_class": "fa-anchor",
+            "identifier": "surfaceTemperature"
+        }
+    },
+    {
+        "pk": 30,
+        "model": "base.topiccategory",
+        "fields": {
+            "description": "Monitoring stations",
+            "gn_description": "Monitoring stations",
+            "is_choice": true,
+            "fa_class": "fa-tree",
+            "identifier": "monitoringStations"
+        }
+    },
+    {
+        "pk": 31,
+        "model": "base.topiccategory",
+        "fields": {
+            "description": "Industrial emissions",
+            "gn_description": "Industrial emissions",
+            "is_choice": true,
+            "fa_class": "fa-tree",
+            "identifier": "industrialEmissions"
+        }
+    },
+    {
+        "pk": 32,
+        "model": "base.topiccategory",
+        "fields": {
+            "description": "Maritime traffic and facilities",
+            "gn_description": "Maritime traffic and facilities",
+            "is_choice": true,
+            "fa_class": "fa-tree",
+            "identifier": "maritimeTrafficAndFacilities"
+        }
+    },
+    {
+        "pk": 33,
+        "model": "base.topiccategory",
+        "fields": {
+            "description": "Offshore platforms",
+            "gn_description": "Offshore platforms",
+            "is_choice": true,
+            "fa_class": "fa-tree",
+            "identifier": "offshorePlatforms"
+        }
+    },
+    {
+        "pk": 34,
+        "model": "base.topiccategory",
+        "fields": {
+            "description": "Riverine inputs",
+            "gn_description": "Riverine inputs",
+            "is_choice": true,
+            "fa_class": "fa-tree",
+            "identifier": "riverineInputs"
+        }
+    },
+    {
+        "pk": 35,
+        "model": "base.topiccategory",
+        "fields": {
+            "description": "Atmospheric depositions",
+            "gn_description": "Atmospheric depositions",
+            "is_choice": true,
+            "fa_class": "fa-tree",
+            "identifier": "atmosphericDepositions"
+        }
+    },
+    {
+        "pk": 36,
+        "model": "base.topiccategory",
+        "fields": {
+            "description": "Hydrographic network",
+            "gn_description": "Hydrographic network",
+            "is_choice": true,
+            "fa_class": "fa-tint",
+            "identifier": "hydrographicNetwork"
+        }
+    },
+    {
+        "pk": 37,
+        "model": "base.topiccategory",
+        "fields": {
+            "description": "Physiographic units",
+            "gn_description": "Physiographic units",
+            "is_choice": true,
+            "fa_class": "fa-tint",
+            "identifier": "physiographicUnits"
+        }
+    },
+    {
+        "pk": 38,
+        "model": "base.topiccategory",
+        "fields": {
+            "description": "Water bodies classification",
+            "gn_description": "Water bodies classification",
+            "is_choice": true,
+            "fa_class": "fa-tint",
+            "identifier": "waterBodiesClassification"
+        }
+    },
+    {
+        "pk": 39,
+        "model": "base.topiccategory",
+        "fields": {
+            "description": "Bathing waters",
+            "gn_description": "Bathing waters",
+            "is_choice": true,
+            "fa_class": "fa-tint",
+            "identifier": "bathingWaters"
+        }
+    },
+    {
         "pk": 1,
         "model": "base.spatialrepresentationtype",
         "fields": {

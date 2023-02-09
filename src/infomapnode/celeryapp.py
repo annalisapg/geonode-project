@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #########################################################################
 #
-# Copyright (C) 2018 OSGeo
+# Copyright (C) 2017 OSGeo
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -17,34 +17,25 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 #
 #########################################################################
+
+from __future__ import absolute_import
+
 import os
+from celery import Celery
 
-from distutils.core import setup
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'infomapnode.settings')
 
-from setuptools import find_packages
+app = Celery('infomapnode')
+
+# Using a string here means the worker will not have to
+# pickle the object when using Windows.
+app.config_from_object('django.conf:settings', namespace="CELERY")
+app.autodiscover_tasks()
 
 
-def read(*rnames):
-    return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
-
-setup(
-    name="infomapnode",
-    version="4.0.0",
-    author="",
-    author_email="",
-    description="infomapnode, based on GeoNode",
-    long_description=(read('README.md')),
-    # Full list of classifiers can be found at:
-    # http://pypi.python.org/pypi?%3Aaction=list_classifiers
-    classifiers=[
-        'Development Status :: 1 - Planning',
-    ],
-    license="GPL",
-    keywords="infomapnode geonode django",
-    url='https://github.com/infomapnode/infomapnode',
-    packages=find_packages(),
-    dependency_links=[
-        "git+https://github.com/GeoNode/geonode.git#egg=geonode"
-    ],
-    include_package_data=True,
-)
+@app.task(
+    bind=True,
+    name='infomapnode.debug_task',
+    queue='default')
+def debug_task(self):
+    print("Request: {!r}".format(self.request))

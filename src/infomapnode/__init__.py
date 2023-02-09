@@ -23,9 +23,9 @@ import os
 __version__ = (4, 0, 0, 'final', 0)
 
 
-default_app_config = "{{project_name}}.apps.AppConfig"
+default_app_config = "infomapnode.apps.AppConfig"
 
 
 def get_version():
-    import {{project_name}}.version
-    return {{project_name}}.version.get_version(__version__)
+    import infomapnode.version
+    return infomapnode.version.get_version(__version__)
