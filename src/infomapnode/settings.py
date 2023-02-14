@@ -141,3 +141,77 @@ if LDAP_ENABLED and 'geonode_ldap' not in INSTALLED_APPS:
 
 # Add your specific LDAP configuration after this comment:
 # https://docs.geonode.org/en/master/advanced/contrib/#configuration
+
+DEFAULT_MS2_BACKGROUNDS = [
+    #{
+    #    "type": "osm",
+    #    "title": "Open Street Map",
+    #    "name": "mapnik",
+    #    "source": "osm",
+    #    "group": "background",
+    #    "visibility": False,
+    #},
+    {
+        "type": "tileprovider",
+        "title": "OpenTopoMap",
+        "provider": "OpenTopoMap",
+        "name": "OpenTopoMap",
+        "source": "OpenTopoMap",
+        "group": "background",
+        "visibility": False,
+    },
+    {
+        "type": "wms",
+        "title": "Sentinel-2 cloudless - https://s2maps.eu",
+        "format": "image/jpeg",
+        "id": "s2cloudless",
+        "name": "s2cloudless:s2cloudless",
+        "url": "https://maps.geosolutionsgroup.com/geoserver/wms",
+        "group": "background",
+        "thumbURL": f"{SITEURL}static/mapstorestyle/img/s2cloudless-s2cloudless.png",
+        "visibility": False,
+    },
+    {
+        "source": "ol",
+        "group": "background",
+        "id": "none",
+        "name": "empty",
+        "title": "Empty Background",
+        "type": "empty",
+        "visibility": False,
+        "args": ["Empty Background", {"visibility": False}],
+    },
+]
+
+if MAPBOX_ACCESS_TOKEN:
+    BASEMAP = {
+        "type": "tileprovider",
+        "title": "MapBox streets-v11",
+        "provider": "MapBoxStyle",
+        "name": "MapBox streets-v11",
+        "accessToken": f"{MAPBOX_ACCESS_TOKEN}",
+        "source": "streets-v11",
+        "thumbURL": f"https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/256/6/33/23?access_token={MAPBOX_ACCESS_TOKEN}",  # noqa
+        "group": "background",
+        "visibility": True,
+    }
+    DEFAULT_MS2_BACKGROUNDS = [
+        BASEMAP,
+    ] + DEFAULT_MS2_BACKGROUNDS
+
+if BING_API_KEY:
+    BASEMAP = {
+        "type": "bing",
+        "title": "Bing Aerial",
+        "name": "AerialWithLabels",
+        "source": "bing",
+        "group": "background",
+        "apiKey": "{{apiKey}}",
+        "visibility": True,
+    }
+    DEFAULT_MS2_BACKGROUNDS = [
+        BASEMAP,
+    ] + DEFAULT_MS2_BACKGROUNDS
+
+MAPSTORE_BASELAYERS = DEFAULT_MS2_BACKGROUNDS
+
