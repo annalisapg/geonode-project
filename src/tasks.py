@@ -241,6 +241,8 @@ def fixtures(ctx):
 --settings={0}".format(_localsettings()), pty=True)
     ctx.run("python manage.py loaddata /tmp/default_site.json \
 --settings={0}".format(_localsettings()), pty=True)
+    ctx.run("python manage.py loaddata /usr/src/infomapnode/fixtures/geonode_themes.json \
+--settings={0}".format(_localsettings()), pty=True)
     ctx.run("python manage.py loaddata /usr/src/infomapnode/fixtures/initial_data.json \
 --settings={0}".format(_localsettings()), pty=True)
     ctx.run("python manage.py set_all_datasets_alternate \
