@@ -5056,31 +5056,95 @@
       }
     },
     {
-      "model": "base.menuplaceholder",
-      "pk": 1,
-      "fields": {
+    "model": "base.menuplaceholder",
+    "pk": 1,
+    "fields": {
         "name": "TOPBAR_MENU"
-      }
-    },
-    {
-        "model": "base.menuplaceholder",
-        "pk": 2,
-        "fields": {
-            "name": "TOPBAR_MENU_LEFT"
-        }
-    },
-    {
-        "model": "base.menuplaceholder",
-        "pk": 3,
-        "fields": {
-            "name": "TOPBAR_MENU_RIGHT"
-        }
-    },
-    {
-        "model": "base.menuplaceholder",
-        "pk": 4,
-        "fields": {
-            "name": "CARDS_MENU"
-        }
     }
+    },
+    {
+    "model": "base.menuplaceholder",
+    "pk": 2,
+    "fields": {
+        "name": "CARDS_MENU"
+    }
+    },
+    {
+    "model": "base.menuplaceholder",
+    "pk": 3,
+    "fields": {
+        "name": "TOPBAR_MENU_RIGHT"
+    }
+    },
+    {
+    "model": "base.menuplaceholder",
+    "pk": 4,
+    "fields": {
+        "name": "TOPBAR_MENU_LEFT"
+    }
+    },
+    {
+    "model": "base.menu",
+    "pk": 1,
+    "fields": {
+        "title": "Dataset Themes",
+        "placeholder": 2,
+        "order": 1
+    }
+    },
+    {
+    "model": "base.menuitem",
+    "pk": 1,
+    "fields": {
+        "title": "Biodiversity",
+        "menu": 1,
+        "order": 1,
+        "blank_target": false,
+        "url": "/catalogue/#/search/filter/?filter%7Bcategory.identifier.in%7D=biota&filter%7Bcategory.identifier.in%7D=species&filter%7Bcategory.identifier.in%7D=habitatTypes&filter%7Bcategory.identifier.in%7D=sitesOfInterest"
+    }
+    },
+    {
+    "model": "base.menuitem",
+    "pk": 2,
+    "fields": {
+        "title": "Boundaries",
+        "menu": 1,
+        "order": 2,
+        "blank_target": false,
+        "url": "/catalogue/#/search/filter/?filter%7Bcategory.identifier.in%7D=boundaries&filter%7Bcategory.identifier.in%7D=administrativeUnit&filter%7Bcategory.identifier.in%7D=topographic&filter%7Bcategory.identifier.in%7D=satelliteImages"
+    }
+    },
+    {
+    "model": "base.menuitem",
+    "pk": 3,
+    "fields": {
+        "title": "Oceans",
+        "menu": 1,
+        "order": 3,
+        "blank_target": false,
+        "url": "/catalogue/#/search/filter/?filter%7Bcategory.identifier.in%7D=oceans&filter%7Bcategory.identifier.in%7D=bathymetrySeafloorTopography&filter%7Bcategory.identifier.in%7D=salinity&filter%7Bcategory.identifier.in%7D=surfaceTemperature"
+    }
+    },
+    {
+    "model": "base.menuitem",
+    "pk": 4,
+    "fields": {
+        "title": "Pollution",
+        "menu": 1,
+        "order": 4,
+        "blank_target": false,
+        "url": "/catalogue/#/search/filter/?filter%7Bcategory.identifier.in%7D=environment&filter%7Bcategory.identifier.in%7D=monitoringStations&filter%7Bcategory.identifier.in%7D=industrialEmissions&filter%7Bcategory.identifier.in%7D=maritimeTrafficAndFacilities&filter%7Bcategory.identifier.in%7D=offshorePlatforms&filter%7Bcategory.identifier.in%7D=riverineInputs&filter%7Bcategory.identifier.in%7D=atmosphericDepositions"
+    }
+    },
+    {
+    "model": "base.menuitem",
+    "pk": 5,
+    "fields": {
+        "title": "Waters management",
+        "menu": 1,
+        "order": 5,
+        "blank_target": false,
+        "url": "/catalogue/#/search/filter/?filter%7Bcategory.identifier.in%7D=inlandWaters&filter%7Bcategory.identifier.in%7D=hydrographicNetwor&filter%7Bcategory.identifier.in%7D=physiographicUnits&filter%7Bcategory.identifier.in%7D=waterBodiesClassification&filter%7Bcategory.identifier.in%7D=bathingWaters"
+    }
+  }
 ]
