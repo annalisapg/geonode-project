@@ -1,0 +1,13 @@
+{% extends "geonode-mapstore-client/snippets/brand_navbar.html" %}
+{% load static %}
+{% block extra_style %}
+<style>
+    #gn-brand-navbar.gn-menu .gn-menu-content-left .gn-menu-list img {
+        height: 3.5rem;
+        filter: invert();
+    }
+</style>
+{% endblock %}
+{% block logo_src %}
+{% static 'img/infomapnodelogo.png' %}
+{% endblock %}

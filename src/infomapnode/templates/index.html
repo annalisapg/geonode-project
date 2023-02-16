@@ -1,0 +1,82 @@
+{% extends "index.html" %}
+{% load i18n %}
+{% load static %}
+{% block content %}
+    <style>
+        .home-dataset-themes {
+            text-align: center;
+            padding: 16px 0;
+        }
+        .home-dataset-themes h1 {
+            font-weight: bold;
+        }
+        .home-dataset-themes ul {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+            justify-content: center;
+            list-style: none;
+            text-align: center;
+        }
+        .home-dataset-themes li {
+            width: 128px;
+            margin: 16px 8px;
+        }
+        .home-dataset-themes li img {
+            width: 85px;
+            height: auto;
+        }
+    </style>
+    <div class="gn-container">
+        <div class="gn-content">
+            <div class="home-dataset-themes">
+                <h1>{% trans 'Dataset Themes' %}</h1>
+                <ul>
+                    <li>
+                        <a href="/catalogue/#/search/filter/?filter%7Bcategory.identifier.in%7D=biota&filter%7Bcategory.identifier.in%7D=species&filter%7Bcategory.identifier.in%7D=habitatTypes&filter%7Bcategory.identifier.in%7D=sitesOfInterest">
+                            <div>
+                                <img src="{% static 'img/themes/biotopa.png' %}"/>
+                                <div>{% trans 'Biodiversity' %}</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/catalogue/#/search/filter/?filter%7Bcategory.identifier.in%7D=boundaries&filter%7Bcategory.identifier.in%7D=administrativeUnit&filter%7Bcategory.identifier.in%7D=topographic&filter%7Bcategory.identifier.in%7D=satelliteImages">
+                            <div>
+                                <img src="{% static 'img/themes/border.png' %}"/>
+                                <div>{% trans 'Boundaries' %}</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/catalogue/#/search/filter/?filter%7Bcategory.identifier.in%7D=oceans&filter%7Bcategory.identifier.in%7D=bathymetrySeafloorTopography&filter%7Bcategory.identifier.in%7D=salinity&filter%7Bcategory.identifier.in%7D=surfaceTemperature">
+                            <div>
+                                <img src="{% static 'img/themes/wave.png' %}"/>
+                                <div>{% trans 'Oceans' %}</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/catalogue/#/search/filter/?filter%7Bcategory.identifier.in%7D=environment&filter%7Bcategory.identifier.in%7D=monitoringStations&filter%7Bcategory.identifier.in%7D=industrialEmissions&filter%7Bcategory.identifier.in%7D=maritimeTrafficAndFacilities&filter%7Bcategory.identifier.in%7D=offshorePlatforms&filter%7Bcategory.identifier.in%7D=riverineInputs&filter%7Bcategory.identifier.in%7D=atmosphericDepositions">
+                            <div>
+                                <img src="{% static 'img/themes/MedPol.png' %}"/>
+                                <div>{% trans 'Pollution' %}</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/catalogue/#/search/filter/?filter%7Bcategory.identifier.in%7D=inlandWaters&filter%7Bcategory.identifier.in%7D=hydrographicNetwor&filter%7Bcategory.identifier.in%7D=physiographicUnits&filter%7Bcategory.identifier.in%7D=waterBodiesClassification&filter%7Bcategory.identifier.in%7D=bathingWaters">
+                            <div>
+                                <img src="{% static 'img/themes/water.png' %}"/>
+                                <div>{% trans 'Waters management' %}</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+    {{ block.super }}
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "geonode-mapstore-client/snippets/topbar.html" %}
+
+{% load get_menu_json %}
+{% load get_menu_json_infomapnode %}
+
+{% block right_menu %}
+    {% get_custom_base_right_topbar_menu as BASE_TOPBAR_MENU_RIGHT_INFOMAPNODE %}
+    {% get_menu_json 'TOPBAR_MENU_RIGHT' as TOPBAR_MENU_RIGHT %}
+    <ul class="gn-menu-list">
+        {% for menu_item in BASE_TOPBAR_MENU_RIGHT_INFOMAPNODE %}
+            {% include './menu_item.html' with menu_item=menu_item variant='primary' align_right=True %}
+        {% endfor %}
+        {% for menu_item in TOPBAR_MENU_RIGHT %}
+            {% include './menu_item.html' with menu_item=menu_item variant='primary' align_right=True %}
+        {% endfor %}
+
+        {% block language_selector %}
+            {% include './language_selector.html' with variant='primary' align_right=True %}
+        {% endblock %}
+    </ul>
+{% endblock %}

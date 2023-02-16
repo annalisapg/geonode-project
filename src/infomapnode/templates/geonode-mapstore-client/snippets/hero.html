@@ -1,8 +1,18 @@
 {% load i18n %}
 {% load base_tags %}
 {% load markdownify %}
+{% load static %}
 
 {% if custom_theme.welcome_theme == 'JUMBOTRON_BG' or not slides %}
+<style>
+    #gn-hero a {
+        color: #ff8f31;
+    }
+    #gn-hero a:hover,
+    #gn-hero a:focus {
+        text-decoration: underline;
+    }
+</style>
 {% if custom_theme.jumbotron_bg and custom_theme.jumbotron_bg.url %}
     <style>
         #gn-hero {
@@ -14,6 +24,18 @@
             background-blend-mode: multiply;
         }
     </style>
+{% else %}
+    <style>
+        #gn-hero {
+            background-image: url('{% static "img/mediterranean.jpg" %}');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-blend-mode: multiply;
+            text-shadow: 2px 2px 2px rgb(0 0 0 / 40%);
+            background-color: #92a1bb;
+        }
+    </style>
 {% endif %}
 {% block extra_style %}
 {% endblock %}
@@ -21,10 +43,10 @@
     <div class="jumbotron">
         <div class="gn-hero-description">
             {% if not custom_theme.jumbotron_welcome_hide %}
-                {% with jumbotron_welcome_title=custom_theme.jumbotron_welcome_title|default:"GeoNode"|template_trans %}
+                {% with jumbotron_welcome_title=custom_theme.jumbotron_welcome_title|default:"Welcome"|template_trans %}
                 <h1>{% trans jumbotron_welcome_title %}</h1>
                 {% endwith %}
-                {% with jumbotron_welcome_content=custom_theme.jumbotron_welcome_content|default:"sharing geospatial data and maps."|template_trans %}
+                {% with jumbotron_welcome_content=custom_theme.jumbotron_welcome_content|default:"This is InfoMapNode the geoportal for sharing geospatial data and maps within the MAP Barcelona Convention among the Mediterranean area.<br/>If you are a user can navigate and view metadata, data and maps available in the system, if you are a data provider in order to have the right credential and account writing to <a href=\"mailto:info@info-rac.org\">System manager</a>."|template_trans %}
                 <p>{{ jumbotron_welcome_content|safe }}</p>
                 {% endwith %}
             {% endif %}
