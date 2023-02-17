@@ -3,31 +3,34 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-17 10:14+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2023-02-17 11:53+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: infomapnode/templates/about.html:4 infomapnode/templates/about.html:8
 #: infomapnode/templates/geonode-mapstore-client/snippets/footer.html:11
+#, fuzzy
 msgid "About InfoMapNode"
-msgstr ""
+msgstr "À propos d’InfoMapNode"
 
 #: infomapnode/templates/about.html:10
+#, fuzzy
 msgid "InfoMAPNode introduction"
-msgstr ""
+msgstr "InfoMAPNode introduction"
 
 #: infomapnode/templates/about.html:12
+#, fuzzy
 msgid ""
 "\n"
 "        InfoMAPNode is the geoportal for viewing and consulting metadata and "
@@ -39,8 +42,18 @@ msgid ""
 "        Sea.\n"
 "    "
 msgstr ""
+"\n"
+"InfoMAPNode est le géoportail pour la visualisation et la consultation des "
+"métadonnées et des données géospatiales collectées dans le cadre de la\n"
+"        Convention. La plateforme vous permet de consulter les données "
+"collectées directement par le PNUE/PAM et les composantes ou données du PAM\n"
+"        collections produites par des organismes et/ou des projets "
+"internationaux, opérant dans le contexte de la Méditerranée\n"
+"        Mer.\n"
+"    "
 
 #: infomapnode/templates/about.html:20
+#, fuzzy
 msgid ""
 "\n"
 "        InfoMAPNode is based on the open software package of GeoNode that is "
@@ -52,8 +65,19 @@ msgid ""
 "        create interactive maps.\n"
 "    "
 msgstr ""
+"\n"
+"InfoMAPNode est basé sur le progiciel ouvert de GeoNode qui est un système "
+"de gestion de contenu géospatial, utilisant\n"
+"        comme plate-forme pour la gestion et la publication de données "
+"géospatiales. Il réunit des open-source matures et stables\n"
+"        des projets logiciels sous une interface cohérente et facile à "
+"utiliser permettant à des utilisateurs non spécialisés de partager des "
+"données et\n"
+"        Créez des cartes interactives.\n"
+"    "
 
 #: infomapnode/templates/about.html:28
+#, fuzzy
 msgid ""
 "\n"
 "        Data management tools built into InfoMAPNode allow for integrated "
@@ -68,8 +92,23 @@ msgid ""
 "the data the geoportal instance contains.\n"
 "    "
 msgstr ""
+"\n"
+"Les outils de gestion des données intégrés à InfoMAPNode permettent la "
+"création intégrée de données, de métadonnées et de cartes\n"
+"        Visualisations. Chaque ensemble de données du système peut être "
+"partagé publiquement ou restreint pour permettre l’accès à des\n"
+"        , conformément à la politique de gestion des données de l’INFO/RAC "
+"(veuillez visiter le site Web de l’INFO/RAC pour plus d’informations). "
+"Social\n"
+"        Des fonctionnalités telles que les profils d’utilisateurs et les "
+"systèmes de commentaires et de notation permettent le développement de "
+"communautés autour de chaque\n"
+"        pour faciliter l’utilisation, la gestion et le contrôle qualité des "
+"données contenues dans l’instance du géoportail.\n"
+"    "
 
 #: infomapnode/templates/about.html:37
+#, fuzzy
 msgid ""
 "\n"
 "        It is also designed to be a flexible platform that software "
@@ -77,34 +116,49 @@ msgid ""
 "        meet requirements in their own applications.\n"
 "    "
 msgstr ""
+"\n"
+"Il est également conçu pour être une plate-forme flexible que les "
+"développeurs de logiciels peuvent étendre, modifier ou intégrer à\n"
+"        répondre aux exigences de leurs propres applications.\n"
+"    "
 
 #: infomapnode/templates/geonode-mapstore-client/snippets/footer.html:6
 #: infomapnode/templates/guideline.html:4
+#, fuzzy
 msgid "Guideline"
-msgstr ""
+msgstr "Directive"
 
 #: infomapnode/templates/geonode-mapstore-client/snippets/footer.html:16
 #: infomapnode/templates/policy.html:4
+#, fuzzy
 msgid "InfoMapNode policy"
-msgstr ""
+msgstr "Politique InfoMapNode"
 
 #: infomapnode/templates/geonode-mapstore-client/snippets/footer.html:21
+#, fuzzy
 msgid "Explore Maps"
-msgstr ""
+msgstr "Explorer les cartes"
 
 #: infomapnode/templates/guideline.html:8
+#, fuzzy
 msgid "InfoMapNode guideline"
-msgstr ""
+msgstr "Guide InfoMapNode"
 
 #: infomapnode/templates/guideline.html:11
+#, fuzzy
 msgid ""
 "\n"
 "        This section is dedicated to provide the user with a navigation "
 "guide using the InfoMAPNode.\n"
 "    "
 msgstr ""
+"\n"
+"Cette section est dédiée à fournir à l’utilisateur un guide de navigation à "
+"l’aide de l’InfoMAPNode.\n"
+"    "
 
 #: infomapnode/templates/guideline.html:16
+#, fuzzy
 msgid ""
 "\n"
 "        The guide consists of a section dedicated to describing how to "
@@ -114,44 +168,60 @@ msgid ""
 "        users, please refer to the InfoMAPNode section of INFO/RAC.\n"
 "    "
 msgstr ""
+"\n"
+"Le guide consiste en une section consacrée à la description de la façon "
+"d’effectuer des recherches de données et de métadonnées dans le\n"
+"        Géoportail et comment les afficher dans le client de visualisation "
+"intégrée. En ce qui concerne le manuel d’utilisation pour accrédité\n"
+"        utilisateurs, veuillez vous référer à la section InfoMAPNode d’INFO/"
+"RAC.\n"
+"    "
 
 #: infomapnode/templates/guideline.html:23
+#, fuzzy
 msgid "INFO/RAC Website - InfoMAPNode section"
-msgstr ""
+msgstr "Site Web INFO/RAC - InfoMAPNode section"
 
 #: infomapnode/templates/guideline.html:26
+#, fuzzy
 msgid "InfoMAPNode user guide"
-msgstr ""
+msgstr "InfoMAPNode guide de l’utilisateur"
 
 #: infomapnode/templates/index.html:34
+#, fuzzy
 msgid "Dataset Themes"
-msgstr ""
+msgstr "Thèmes des ensembles de données"
 
 #: infomapnode/templates/index.html:40
 msgid "Biodiversity"
-msgstr ""
+msgstr "Biodiversité"
 
 #: infomapnode/templates/index.html:48
+#, fuzzy
 msgid "Boundaries"
-msgstr ""
+msgstr "Limites"
 
 #: infomapnode/templates/index.html:56
 msgid "Oceans"
-msgstr ""
+msgstr "Océans"
 
 #: infomapnode/templates/index.html:64
+#, fuzzy
 msgid "Pollution"
-msgstr ""
+msgstr "Pollution"
 
 #: infomapnode/templates/index.html:72
+#, fuzzy
 msgid "Waters management"
-msgstr ""
+msgstr "Gestion des eaux"
 
 #: infomapnode/templates/policy.html:8
+#, fuzzy
 msgid "Policy applied to InfoMapNode"
-msgstr ""
+msgstr "Stratégie appliquée à InfoMapNode"
 
 #: infomapnode/templates/policy.html:11
+#, fuzzy
 msgid ""
 "\n"
 "        The InfoMapNode geoportal is managed by Regional Activities Centre "
@@ -165,8 +235,21 @@ msgid ""
 "        personal data processed as described in this Policy.\n"
 "    "
 msgstr ""
+"\n"
+"Le géoportail InfoMapNode est géré par le Centre d’activités régionales pour "
+"l’information et la communication (CAR/INFO) qui\n"
+"        est hébergé par l’Institut national italien pour la protection de "
+"l’environnement et la recherche (ISPRA), dont le bureau est situé au\n"
+"        Via Vitaliano Brancati 48 Roma. INFO/RAC est responsable des "
+"activités de communication et de diffusion au sein du\n"
+"        Programme des Nations Unies pour l’environnement / Plan d’action "
+"pour la Méditerranée et projets connexes et il sera le contrôleur de tout\n"
+"        les données personnelles traitées comme décrit dans la présente "
+"Politique.\n"
+"    "
 
 #: infomapnode/templates/policy.html:20
+#, fuzzy
 msgid ""
 "\n"
 "        The INFO/RAC data privacy policy complies with the General Data "
@@ -183,8 +266,26 @@ msgid ""
 "Official Journal of the European Union.\n"
 "    "
 msgstr ""
+"\n"
+"La politique de confidentialité des données INFO/RAC est conforme au "
+"règlement général sur la protection des données (RGPD) qui entrera en "
+"vigueur\n"
+"        le 25 mai 2018. Vous trouverez ci-dessous des informations sur la "
+"façon dont l’INFO/RAC utilise les informations. Politique de confidentialité "
+"et utilisation de\n"
+"        Données personnelles conformément au décret législatif italien "
+"n.196/2003 (Code de confidentialité) et au règlement (UE) 2016/679 du\n"
+"        Le Parlement européen et du Conseil du 27 avril 2016 relatif à la "
+"protection des personnes physiques à l’égard de la\n"
+"        le traitement des données à caractère personnel et la libre "
+"circulation de ces données, et abrogeant la directive 95/46/CE (données "
+"générales)\n"
+"        Règlement sur la protection - RGPD). De plus amples informations "
+"sont disponibles au Journal officiel de l’Union européenne.\n"
+"    "
 
 #: infomapnode/templates/policy.html:30
+#, fuzzy
 msgid ""
 "\n"
 "        The protection of your personal data is an important matter for the "
@@ -194,8 +295,17 @@ msgid ""
 "        providers.\n"
 "    "
 msgstr ""
+"\n"
+"La protection de vos données personnelles est une question importante pour "
+"le CAR/INFO. Par conséquent, nous avons pris des mesures techniques et\n"
+"        Mesures organisationnelles pour s’assurer que les réglementations en "
+"matière de protection des données sont respectées à la fois par nous et par "
+"un service externe\n"
+"        Fournisseurs.\n"
+"    "
 
 #: infomapnode/templates/policy.html:37
+#, fuzzy
 msgid ""
 "\n"
 "        In the InfoMapNode, personal data is collected and stored only to "
@@ -206,6 +316,15 @@ msgid ""
 "this.\n"
 "    "
 msgstr ""
+"\n"
+"Dans l’InfoMapNode, les données personnelles ne sont collectées et stockées "
+"que dans la mesure où cela est techniquement nécessaire dans\n"
+"        afin de réglementer l’accès et le droit de visualiser, de "
+"télécharger ou de modifier des données spatiales et des métadonnées. Vos "
+"données personnelles seront uniquement\n"
+"        être accessible au public/visible si vous y avez préalablement "
+"consenti.\n"
+"    "
 
 #: infomapnode/templates/policy.html:44
 msgid ""
@@ -217,8 +336,17 @@ msgid ""
 "            InfoMapNode</i>\".\n"
 "    "
 msgstr ""
+"\n"
+"        Veuillez noter qu’à tout moment, vous pouvez révoquer votre "
+"consentement à l’utilisation de vos données personnelles. À cette fin, "
+"veuillez envoyer un\n"
+"        e-mail à <a href=\"mailto:info@info-rac.org\">info@info-rac.org</a>, "
+"avec le titre: « <i>Se désabonner de\n"
+"            InfoMapNode</i> ».\n"
+"    "
 
 #: infomapnode/templates/policy.html:51
+#, fuzzy
 msgid ""
 "\n"
 "        The following privacy policy provides you with a complete overview "
@@ -226,12 +354,20 @@ msgid ""
 "        your data, what kind of data are collected and how it will be used.\n"
 "    "
 msgstr ""
+"\n"
+"La politique de confidentialité suivante vous donne un aperçu complet de la "
+"manière dont l’INFO/RAC garantit la protection des\n"
+"        vos données, quel type de données sont collectées et comment elles "
+"seront utilisées.\n"
+"    "
 
 #: infomapnode/templates/policy.html:56
+#, fuzzy
 msgid "What Information do we gather from you?"
-msgstr ""
+msgstr "Quelles informations recueillons-nous auprès de vous ?"
 
 #: infomapnode/templates/policy.html:58
+#, fuzzy
 msgid ""
 "\n"
 "        We fully respect your right to privacy in relation to your "
@@ -242,8 +378,19 @@ msgid ""
 "where we are legally entitled to do so.\n"
 "    "
 msgstr ""
+"\n"
+"Nous respectons pleinement votre droit à la vie privée en ce qui concerne "
+"vos interactions avec les plateformes INFO/RAC et nous nous efforçons de\n"
+"        garantir la transparence dans nos relations avec vous quant aux "
+"informations que nous collecterons et à la façon dont nous utiliserons "
+"votre\n"
+"        information. De plus, nous ne recueillons et n’utilisons des "
+"renseignements personnels que lorsque nous sommes légalement autorisés à le "
+"faire.\n"
+"    "
 
 #: infomapnode/templates/policy.html:65
+#, fuzzy
 msgid ""
 "\n"
 "        You may be asked to provide the following categories of data when "
@@ -252,60 +399,75 @@ msgid ""
 "data collection and visualization platforms:\n"
 "    "
 msgstr ""
+"\n"
+"Il peut vous être demandé de fournir les catégories de données suivantes "
+"lorsque vous demandez à vous inscrire au single-sing-on\n"
+"        système d’authentification, pour gérer l’accès et le droit dans les "
+"différentes plateformes de collecte et de visualisation des données:\n"
+"    "
 
 #: infomapnode/templates/policy.html:71
 msgid "Names"
-msgstr ""
+msgstr "Noms"
 
 #: infomapnode/templates/policy.html:72
 msgid "Gender"
-msgstr ""
+msgstr "Sexe"
 
 #: infomapnode/templates/policy.html:73
 msgid "Role"
-msgstr ""
+msgstr "Rôle"
 
 #: infomapnode/templates/policy.html:74
 msgid "Qualifications"
-msgstr ""
+msgstr "Qualifications"
 
 #: infomapnode/templates/policy.html:75
 msgid "Organization"
-msgstr ""
+msgstr "Organisation"
 
 #: infomapnode/templates/policy.html:76
 msgid "Department"
-msgstr ""
+msgstr "Département"
 
 #: infomapnode/templates/policy.html:77
 msgid "Email address"
-msgstr ""
+msgstr "Adresse email"
 
 #: infomapnode/templates/policy.html:78
 msgid "Phone number"
-msgstr ""
+msgstr "Numéro de téléphone"
 
 #: infomapnode/templates/policy.html:79
+#, fuzzy
 msgid "Physical address"
-msgstr ""
+msgstr "Adresse physique"
 
 #: infomapnode/templates/policy.html:80
 msgid "Technical information"
-msgstr ""
+msgstr "Informations techniques."
 
 #: infomapnode/templates/policy.html:82
+#, fuzzy
 msgid ""
 "\n"
 "    We may also ask for additional information including the nature of any "
 "enquiries or complaints you may make. We endeavor\n"
 "    to only collect relevant data.\n"
 msgstr ""
+"\n"
+"Nous pouvons également demander des informations supplémentaires, y compris "
+"la nature de toute demande ou plainte que vous pourriez faire. Nous nous "
+"efforçons\n"
+"    de ne collecter que les données pertinentes.\n"
 
 #: infomapnode/templates/policy.html:87
+#, fuzzy
 msgid "Data processing by the InfoMAPNode geoportal"
-msgstr ""
+msgstr "Traitement des données par le géoportail InfoMAPNode"
 
 #: infomapnode/templates/policy.html:89
+#, fuzzy
 msgid ""
 "\n"
 "        Data are collected and exchanged during each visit to the "
@@ -314,8 +476,15 @@ msgid ""
 "to our server. This includes:\n"
 "    "
 msgstr ""
+"\n"
+"Les données sont collectées et échangées lors de chaque visite sur le "
+"géoportail InfoMAPNode. Le géoportail INFO/RAC\n"
+"        collecte et stocke automatiquement les données transmises de votre "
+"navigateur à notre serveur. Cela comprend :\n"
+"    "
 
 #: infomapnode/templates/policy.html:99 infomapnode/templates/policy.html:167
+#, fuzzy
 msgid ""
 "\n"
 "    The INFO/RAC analyses data solely for statistical purposes in order to "
@@ -329,24 +498,44 @@ msgid ""
 "    of legal action or criminal prosecution. Data will not be transferred "
 "for any other reason.\n"
 msgstr ""
+"\n"
+"L’AC/INFO analyse les données uniquement à des fins statistiques afin de "
+"mesurer la demande de contenu Web. Ce n’est pas\n"
+"    Il est possible de retracer ces données jusqu’à une personne spécifique. "
+"Ces données ne sont pas fusionnées avec d’autres sources de données. "
+"Données\n"
+"    recueillies lors des visites sur le site Web de l’INFO/RAC ne sont "
+"transmises à des tiers que lorsque la loi ou une ordonnance du tribunal "
+"l’exige.\n"
+"    ou dans les cas où des attaques contre l’infrastructure du CAR/INFO "
+"rendent nécessaire la transmission de ces données aux fins\n"
+"    d’action en justice ou de poursuites pénales. Les données ne seront pas "
+"transférées pour toute autre raison.\n"
 
 #: infomapnode/templates/policy.html:107
+#, fuzzy
 msgid "Duration of the storage of personal data"
-msgstr ""
+msgstr "Durée de conservation des données personnelles"
 
 #: infomapnode/templates/policy.html:109
+#, fuzzy
 msgid ""
 "\n"
 "        The INFO/RAC will store the personal data for the shortest time "
 "possible for each specific use.\n"
 "    "
 msgstr ""
+"\n"
+"L’AC/INFO conservera les données personnelles le moins longtemps possible "
+"pour chaque utilisation spécifique.\n"
+"    "
 
 #: infomapnode/templates/policy.html:113
 msgid "Cookies"
-msgstr ""
+msgstr "Cookies"
 
 #: infomapnode/templates/policy.html:115
+#, fuzzy
 msgid ""
 "\n"
 "        Session cookies are small information units stored by the provider "
@@ -357,8 +546,17 @@ msgid ""
 "cannot store any other data.\n"
 "    "
 msgstr ""
+"\n"
+"Les cookies de session sont de petites unités d’information stockées par le "
+"fournisseur dans la mémoire principale de l’ordinateur de l’utilisateur. Un\n"
+"        Le cookie de session contient un numéro d’identification unique "
+"généré de manière aléatoire, appelé ID de session. Un cookie aussi\n"
+"        contient des données sur son origine et la durée de conservation. "
+"Ces cookies ne peuvent pas stocker d’autres données.\n"
+"    "
 
 #: infomapnode/templates/policy.html:122
+#, fuzzy
 msgid ""
 "\n"
 "        Other providers use permanent cookies to recognise visitors "
@@ -368,8 +566,17 @@ msgid ""
 "        by the INFO/RAC are deleted when the session is terminated.\n"
 "    "
 msgstr ""
+"\n"
+"D’autres fournisseurs utilisent des cookies permanents pour reconnaître les "
+"visiteurs qui reviennent après une période plus longue. Ceci\n"
+"        Les informations sont stockées sous forme de fichier texte sur le "
+"disque dur de l’ordinateur de l’utilisateur. En revanche, les cookies de "
+"session utilisés\n"
+"        par l’INFO/RAC sont supprimés lorsque la session est terminée.\n"
+"    "
 
 #: infomapnode/templates/policy.html:129
+#, fuzzy
 msgid ""
 "\n"
 "        Cookies can be controlled by all internet browsers. Most browsers "
@@ -377,20 +584,32 @@ msgid ""
 "        prompting the user.\n"
 "    "
 msgstr ""
+"\n"
+"Les cookies peuvent être contrôlés par tous les navigateurs Internet. La "
+"plupart des navigateurs sont configurés pour accepter tous les cookies sans\n"
+"        invitant l’utilisateur.\n"
+"    "
 
 #: infomapnode/templates/policy.html:135
+#, fuzzy
 msgid ""
 "\n"
 "        You may choose to refuse cookies but, if you do so, some of the "
 "functionalities may not longer be available to you.\n"
 "    "
 msgstr ""
+"\n"
+"Vous pouvez choisir de refuser les cookies mais, si vous le faites, "
+"certaines fonctionnalités peuvent ne plus être disponibles pour vous.\n"
+"    "
 
 #: infomapnode/templates/policy.html:139
+#, fuzzy
 msgid "How we store your personal data"
-msgstr ""
+msgstr "Comment nous stockons vos données personnelles"
 
 #: infomapnode/templates/policy.html:141
+#, fuzzy
 msgid ""
 "\n"
 "        All information you provide us with is stored on our secure servers "
@@ -401,49 +620,76 @@ msgid ""
 "to share a password with anyone.\n"
 "    "
 msgstr ""
+"\n"
+"Toutes les informations que vous nous fournissez sont stockées sur nos "
+"serveurs sécurisés situés dans l’Union européenne. Où avons-nous\n"
+"        vous a donné (ou lorsque vous avez choisi) un mot de passe qui vous "
+"permet d’accéder à certaines parties de notre site Web, vous êtes\n"
+"        responsable de la confidentialité de ce mot de passe. Nous vous "
+"demandons de ne pas partager votre mot de passe avec qui que ce soit.\n"
+"    "
 
 #: infomapnode/templates/policy.html:147
+#, fuzzy
 msgid "What rights do you have?"
-msgstr ""
+msgstr "Quels sont vos droits ?"
 
 #: infomapnode/templates/policy.html:149
+#, fuzzy
 msgid ""
 "\n"
 "        As a data subject, you have the following rights:\n"
 "    "
 msgstr ""
+"\n"
+"En tant que personne concernée, vous disposez des droits suivants :\n"
+"    "
 
 #: infomapnode/templates/policy.html:154
+#, fuzzy
 msgid "the right of access to personal data relating to you;"
-msgstr ""
+msgstr "le droit d’accès aux données personnelles vous concernant ;"
 
 #: infomapnode/templates/policy.html:155
+#, fuzzy
 msgid ""
 "the right to update your personal data or correct any mistakes in your "
 "personal data;"
 msgstr ""
+"le droit de mettre à jour vos données personnelles ou de corriger toute "
+"erreur dans vos données personnelles ;"
 
 #: infomapnode/templates/policy.html:156
+#, fuzzy
 msgid "the right to ask us to stop contacting you;"
-msgstr ""
+msgstr "le droit de nous demander de cesser de vous contacter ;"
 
 #: infomapnode/templates/policy.html:157
+#, fuzzy
 msgid "rights in relation to automated decision taking;"
-msgstr ""
+msgstr "les droits relatifs à la prise de décision automatisée ;"
 
 #: infomapnode/templates/policy.html:158
+#, fuzzy
 msgid "the right to restrict or prevent your personal data being processed;"
 msgstr ""
+"le droit de restreindre ou d’empêcher le traitement de vos données "
+"personnelles ;"
 
 #: infomapnode/templates/policy.html:159
+#, fuzzy
 msgid "the right to have your personal data ported to another data controller;"
 msgstr ""
+"le droit de faire transférer vos données personnelles à un autre responsable "
+"du traitement ;"
 
 #: infomapnode/templates/policy.html:160
+#, fuzzy
 msgid "the right to erasure; and"
-msgstr ""
+msgstr "le droit à l’effacement ; et"
 
 #: infomapnode/templates/policy.html:162
+#, fuzzy
 msgid ""
 "\n"
 "            the right to complain to the Data Protection Controller if you "
@@ -451,10 +697,16 @@ msgid ""
 "Legislation.\n"
 "        "
 msgstr ""
+"\n"
+"le droit de porter plainte auprès du contrôleur de la protection des données "
+"si vous pensez que nous n’avons pas traité vos données personnelles "
+"conformément à la législation.\n"
+"        "
 
 #: infomapnode/templates/policy.html:175
+#, fuzzy
 msgid "Right to information"
-msgstr ""
+msgstr "Droit à l’information"
 
 #: infomapnode/templates/policy.html:177
 msgid ""
@@ -467,8 +719,17 @@ msgid ""
 "a>).\n"
 "    "
 msgstr ""
+"\n"
+"        À tout moment, vous avez le droit d’obtenir des informations sur les "
+"données stockées à votre sujet, leur origine et leurs destinataires et\n"
+"        le but du stockage. Les informations sur les données stockées "
+"peuvent être obtenues auprès de l’équipe centrale de protection des données\n"
+"        (courriel à <a href=\"mailto:info@info-rac.org\">info@info-rac.org</"
+"a>).\n"
+"    "
 
 #: infomapnode/templates/policy.html:184
+#, fuzzy
 msgid ""
 "\n"
 "        Requests for your personal data must be made to us specifying what "
@@ -478,8 +739,17 @@ msgid ""
 "        the type of information you would like to see.\n"
 "    "
 msgstr ""
+"\n"
+"Les demandes de vos données personnelles doivent nous être adressées en "
+"précisant les données personnelles auxquelles vous devez accéder, et une "
+"copie sera\n"
+"        être conservés dans nos dossiers. Pour nous aider à localiser "
+"l’information, veuillez nous donner autant d’informations que possible sur\n"
+"        le type d’information que vous aimeriez voir.\n"
+"    "
 
 #: infomapnode/templates/policy.html:191
+#, fuzzy
 msgid ""
 "\n"
 "        If, to comply with your request, we would have to disclose "
@@ -490,39 +760,67 @@ msgid ""
 "person, if possible.\n"
 "    "
 msgstr ""
+"\n"
+"Si, pour répondre à votre demande, nous devions divulguer des informations "
+"relatives à ou identifiant une autre personne, nous\n"
+"        peut avoir besoin d’obtenir le consentement de cette personne, si "
+"possible. Si nous ne pouvons pas obtenir le consentement, nous devrons peut-"
+"être refuser\n"
+"        ces informations ou modifier les données pour supprimer l’identité "
+"de cette personne, si possible.\n"
+"    "
 
 #: infomapnode/templates/policy.html:198
+#, fuzzy
 msgid ""
 "\n"
 "        Right to correct your personal data or correct any mistakes in your "
 "personal data.\n"
 "    "
 msgstr ""
+"\n"
+"Droit de corriger vos données personnelles ou de corriger toute erreur dans "
+"vos données personnelles.\n"
+"    "
 
 #: infomapnode/templates/policy.html:203
+#, fuzzy
 msgid ""
 "\n"
 "        If you would like to do so, please:\n"
 "    "
 msgstr ""
+"\n"
+"Si vous souhaitez le faire, veuillez :\n"
+"    "
 
 #: infomapnode/templates/policy.html:208
+#, fuzzy
 msgid ""
 "email us (to <a href=\"mailto:info@info-rac.org\">info@info-rac.org</a>);"
 msgstr ""
+"<a href=\"mailto:info@info-rac.org\">envoyez-nous</a> un courriel (à "
+"info@info-rac.org);"
 
 #: infomapnode/templates/policy.html:209
+#, fuzzy
 msgid ""
 "Include enough information to identify you (e.g. name, registration "
 "details); and"
 msgstr ""
+"Inclure suffisamment d’informations pour vous identifier (par exemple, nom, "
+"détails d’inscription); et"
 
 #: infomapnode/templates/policy.html:210
+#, fuzzy
 msgid ""
 "Specify which information is incorrect and what it should be replaced with."
 msgstr ""
+"Spécifiez quelles informations sont incorrectes et par quoi elles doivent "
+"être remplacées."
 
 #: infomapnode/templates/policy.html:212
+#, fuzzy
 msgid ""
 "\n"
 "    If we are required to update your personal data, we will inform "
@@ -530,8 +828,15 @@ msgid ""
 "    disclosed (if any), unless this proves impossible or has a "
 "disproportionate effort.\n"
 msgstr ""
+"\n"
+"Si nous sommes tenus de mettre à jour vos données personnelles, nous "
+"informerons les destinataires auxquels ces données personnelles ont été "
+"envoyées.\n"
+"    divulgués (le cas échéant), sauf si cela s’avère impossible ou nécessite "
+"un effort disproportionné.\n"
 
 #: infomapnode/templates/policy.html:218
+#, fuzzy
 msgid ""
 "\n"
 "        It is your responsibility that all of the personal data provided to "
@@ -540,26 +845,42 @@ msgid ""
 "(Contact us).\n"
 "    "
 msgstr ""
+"\n"
+"Il est de votre responsabilité que toutes les données personnelles qui nous "
+"sont fournies soient exactes et complètes. Si des informations\n"
+"        vous nous avez donné des modifications, veuillez nous en informer "
+"dès que possible (Contactez-nous).\n"
+"    "
 
 #: infomapnode/templates/policy.html:223
 msgid "Right to erasure"
-msgstr ""
+msgstr "Droit d’effacement"
 
 #: infomapnode/templates/policy.html:225
+#, fuzzy
 msgid ""
 "\n"
 "        In accordance with the Data Protection Legislation, you can ask us "
 "to erase your personal data where:\n"
 "    "
 msgstr ""
+"\n"
+"Conformément à la législation sur la protection des données, vous pouvez "
+"nous demander d’effacer vos données personnelles lorsque :\n"
+"    "
 
 #: infomapnode/templates/policy.html:231
+#, fuzzy
 msgid ""
 "\n"
 "            you do not believe that we need your personal data in order to "
 "process it for the purposes set out in thisPolicy;\n"
 "        "
 msgstr ""
+"\n"
+"vous ne pensez pas que nous avons besoin de vos données personnelles pour "
+"les traiter aux fins énoncées dans la présente Politique ;\n"
+"        "
 
 #: infomapnode/templates/policy.html:236
 msgid ""
@@ -569,38 +890,61 @@ msgid ""
 "data;</li>\n"
 "        "
 msgstr ""
+"\n"
+"            si vous nous avez donné votre consentement pour traiter vos "
+"données personnelles, vous retirez ce consentement et nous ne pouvons pas "
+"traiter légalement vos données personnelles ;</li>"
 
 #: infomapnode/templates/policy.html:240
+#, fuzzy
 msgid ""
 "\n"
 "            you object to our processing and we do not have any legal basis "
 "for continuing to process your personal data;\n"
 "        "
 msgstr ""
+"\n"
+"vous vous opposez à notre traitement et nous n’avons aucune base légale pour "
+"continuer à traiter vos données personnelles ;\n"
+"        "
 
 #: infomapnode/templates/policy.html:245
+#, fuzzy
 msgid ""
 "\n"
 "            your data has been processed unlawfully or have not been erased "
 "when it should have been; or\n"
 "        "
 msgstr ""
+"\n"
+"vos données ont été traitées illégalement ou n’ont pas été effacées alors "
+"qu’elles auraient dû l’être ; ou\n"
+"        "
 
 #: infomapnode/templates/policy.html:250
+#, fuzzy
 msgid ""
 "\n"
 "            the personal data have to be erased to comply with law.\n"
 "        "
 msgstr ""
+"\n"
+"Les données personnelles doivent être effacées pour se conformer à la loi.\n"
+"        "
 
 #: infomapnode/templates/policy.html:255
+#, fuzzy
 msgid ""
 "\n"
 "    We may continue to process your personal data in certain circumstances "
 "in accordance with Data Protection Legislation.\n"
 msgstr ""
+"\n"
+"Nous pouvons continuer à traiter vos données personnelles dans certaines "
+"circonstances conformément à la législation sur la protection des données.\n"
 
 #: infomapnode/templates/policy.html:260
+#, fuzzy
 msgid ""
 "\n"
 "        Where you have requested the erasure of your personal data, we will "
@@ -610,12 +954,22 @@ msgid ""
 "        about those recipients if you request it.\n"
 "    "
 msgstr ""
+"\n"
+"Lorsque vous avez demandé l’effacement de vos données personnelles, nous "
+"informerons les destinataires auxquels ces données personnelles sont "
+"destinées.\n"
+"        ont été divulgués, sauf si cela s’avère impossible ou implique des "
+"efforts disproportionnés. Nous vous informerons également\n"
+"        sur ces destinataires si vous le demandez.\n"
+"    "
 
 #: infomapnode/templates/policy.html:266
+#, fuzzy
 msgid "Changes to the policy"
-msgstr ""
+msgstr "Modifications apportées à la politique"
 
 #: infomapnode/templates/policy.html:268
+#, fuzzy
 msgid ""
 "\n"
 "        This Policy may be updated or changed from time to time at the INFO/"
@@ -630,7 +984,21 @@ msgid ""
 "without your consent.\n"
 "    "
 msgstr ""
+"\n"
+"Cette politique peut être mise à jour ou modifiée de temps à autre à la "
+"seule discrétion de l’ACER/INFO. La date du plus\n"
+"        Les révisions récentes apparaîtront sur cette page. Si vous "
+"n’acceptez pas ces modifications, veuillez ne pas continuer à l’utiliser.\n"
+"        InfoMAPNode pour soumettre des informations personnelles. Si des "
+"modifications importantes sont apportées à la Politique, nous vous en "
+"informerons par\n"
+"        placer un avis bien visible sur le site Web ou vous envoyer une "
+"notification à ce sujet. Nous ne traiterons pas\n"
+"        vos données personnelles d’une manière non prévue par la présente "
+"Politique sans votre consentement.\n"
+"    "
 
 #: infomapnode/templates/policy.html:277
+#, fuzzy
 msgid "Updated to May 2019."
-msgstr ""
+msgstr "Mis à jour en mai 2019."
