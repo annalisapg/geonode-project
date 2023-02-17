@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-17 12:07+0000\n"
-"PO-Revision-Date: 2023-02-17 12:28+0100\n"
+"PO-Revision-Date: 2023-02-17 13:11+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -132,7 +132,7 @@ msgstr "Explorer les cartes"
 
 #: infomapnode/templates/geonode-mapstore-client/snippets/hero.html:51
 msgid "Welcome"
-msgstr ""
+msgstr "Bienvenue"
 
 #: infomapnode/templates/geonode-mapstore-client/snippets/hero.html:58
 msgid ""
@@ -142,6 +142,13 @@ msgid ""
 "system, if you are a data provider in order to have the right credential and "
 "account writing to <a href=\\"
 msgstr ""
+"Il s’agit d’InfoMapNode, le géoportail pour le partage de données "
+"géospatiales et de cartes dans le cadre de la Convention de Barcelone du PAM "
+"entre la région méditerranéenne.<br/>Si vous êtes un utilisateur peut "
+"naviguer et afficher les métadonnées, les données et les cartes disponibles "
+"dans le système, si vous êtes un fournisseur de données afin d’avoir les "
+"bonnes informations d’identification et le bon compte en écrivant à <a "
+"href=\\"
 
 #: infomapnode/templates/guideline.html:8
 msgid "InfoMapNode guideline"
@@ -430,7 +437,7 @@ msgstr "Adresse physique"
 
 #: infomapnode/templates/policy.html:80
 msgid "Technical information"
-msgstr "Informations techniques."
+msgstr "Informations techniques"
 
 #: infomapnode/templates/policy.html:82
 msgid ""
@@ -844,7 +851,8 @@ msgstr ""
 "\n"
 "            si vous nous avez donné votre consentement pour traiter vos "
 "données personnelles, vous retirez ce consentement et nous ne pouvons pas "
-"traiter légalement vos données personnelles ;</li>"
+"traiter légalement vos données personnelles ;</li>\n"
+"        "
 
 #: infomapnode/templates/policy.html:240
 msgid ""
