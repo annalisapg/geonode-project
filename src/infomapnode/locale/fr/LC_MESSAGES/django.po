@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-17 10:14+0000\n"
+"POT-Creation-Date: 2023-02-17 12:07+0000\n"
 "PO-Revision-Date: 2023-02-17 12:28+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -129,6 +129,19 @@ msgstr "Politique InfoMapNode"
 #: infomapnode/templates/geonode-mapstore-client/snippets/footer.html:21
 msgid "Explore Maps"
 msgstr "Explorer les cartes"
+
+#: infomapnode/templates/geonode-mapstore-client/snippets/hero.html:51
+msgid "Welcome"
+msgstr ""
+
+#: infomapnode/templates/geonode-mapstore-client/snippets/hero.html:58
+msgid ""
+"This is InfoMapNode the geoportal for sharing geospatial data and maps "
+"within the MAP Barcelona Convention among the Mediterranean area.<br/>If you "
+"are a user can navigate and view metadata, data and maps available in the "
+"system, if you are a data provider in order to have the right credential and "
+"account writing to <a href=\\"
+msgstr ""
 
 #: infomapnode/templates/guideline.html:8
 msgid "InfoMapNode guideline"

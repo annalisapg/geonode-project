@@ -43,12 +43,20 @@
     <div class="jumbotron">
         <div class="gn-hero-description">
             {% if not custom_theme.jumbotron_welcome_hide %}
-                {% with jumbotron_welcome_title=custom_theme.jumbotron_welcome_title|default:"Welcome"|template_trans %}
-                <h1>{% trans jumbotron_welcome_title %}</h1>
-                {% endwith %}
-                {% with jumbotron_welcome_content=custom_theme.jumbotron_welcome_content|default:"This is InfoMapNode the geoportal for sharing geospatial data and maps within the MAP Barcelona Convention among the Mediterranean area.<br/>If you are a user can navigate and view metadata, data and maps available in the system, if you are a data provider in order to have the right credential and account writing to <a href=\"mailto:info@info-rac.org\">System manager</a>."|template_trans %}
-                <p>{{ jumbotron_welcome_content|safe }}</p>
-                {% endwith %}
+                {% if custom_theme.jumbotron_welcome_title %}
+                  {% with jumbotron_welcome_title=custom_theme.jumbotron_welcome_title|default:"Welcome"|template_trans %}
+                  <h1>{% trans jumbotron_welcome_title %}</h1>
+                  {% endwith %}
+                {% else %}
+                  <h1>{% trans "Welcome" %}</h1>
+                {% endif %}
+                {% if custom_theme.jumbotron_welcome_content %}
+                  {% with jumbotron_welcome_content=custom_theme.jumbotron_welcome_content|default:"This is InfoMapNode the geoportal for sharing geospatial data and maps within the MAP Barcelona Convention among the Mediterranean area.<br/>If you are a user can navigate and view metadata, data and maps available in the system, if you are a data provider in order to have the right credential and account writing to <a href=\"mailto:info@info-rac.org\">System manager</a>."|template_trans %}
+                  <p>{{ jumbotron_welcome_content|safe }}</p>
+                  {% endwith %}
+                {% else %}
+                  <p>{% trans "This is InfoMapNode the geoportal for sharing geospatial data and maps within the MAP Barcelona Convention among the Mediterranean area.<br/>If you are a user can navigate and view metadata, data and maps available in the system, if you are a data provider in order to have the right credential and account writing to <a href=\"mailto:info@info-rac.org\">System manager</a>." %}</p>
+                {% endif %}
             {% endif %}
         </div>
         <p class="gn-hero-tools">
