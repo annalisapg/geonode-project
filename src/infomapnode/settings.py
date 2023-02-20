@@ -221,3 +221,101 @@ if BING_API_KEY:
 
 MAPSTORE_BASELAYERS = DEFAULT_MS2_BACKGROUNDS
 
+# OpenLDAP settings
+import ldap
+from django_auth_ldap.config import LDAPSearch, GroupOfUniqueNamesType
+import logging
+
+logger = logging.getLogger('django_auth_ldap')
+logger.addHandler(logging.StreamHandler())
+logger.setLevel(logging.DEBUG)
+
+AUTHENTICATION_BACKENDS = (
+    'infomapnode.backend.IMNLDAPBackend',
+) + AUTHENTICATION_BACKENDS
+
+AUTH_LDAP_SERVER_URI = os.getenv(
+    'AUTH_LDAP_SERVER_URI', 'ldap://localhost:389'
+)
+
+AUTH_LDAP_BIND_DN = os.getenv(
+    'AUTH_LDAP_BIND_DN', 'cn=admin,dc=example,dc=org'
+)
+
+AUTH_LDAP_BIND_PASSWORD = os.getenv(
+    'AUTH_LDAP_BIND_PASSWORD', 'password'
+)
+
+AUTH_LDAP_USER_BASE_SEARCH = os.getenv(
+    'AUTH_LDAP_USER_BASE_SEARCH', 'dc=example,dc=org'
+)
+
+AUTH_LDAP_USER_SEARCH_ATTR = os.getenv(
+    'AUTH_LDAP_USER_SEARCH_ATTR', 'uid'
+)
+
+AUTH_LDAP_USER_SEARCH = LDAPSearch(
+    AUTH_LDAP_USER_BASE_SEARCH,
+    ldap.SCOPE_SUBTREE,
+    "({}=%(user)s)".format(AUTH_LDAP_USER_SEARCH_ATTR),
+)
+
+DJANGO_USER_ATTR_1 = os.getenv('DJANGO_USER_ATTR_1', 'first_name')
+LDAP_USER_ATTR_1 = os.getenv('LDAP_USER_ATTR_1', 'givenName')
+DJANGO_USER_ATTR_2 = os.getenv('DJANGO_USER_ATTR_2', 'last_name')
+LDAP_USER_ATTR_2 = os.getenv('LDAP_USER_ATTR_2', 'sn')
+DJANGO_USER_ATTR_3 = os.getenv('DJANGO_USER_ATTR_3', 'email')
+LDAP_USER_ATTR_3 = os.getenv('LDAP_USER_ATTR_3', 'mail')
+DJANGO_USER_ATTR_4 = os.getenv('DJANGO_USER_ATTR_4', 'username')
+LDAP_USER_ATTR_4 = os.getenv('LDAP_USER_ATTR_4', 'uid')
+
+# Populate the Django user from the LDAP directory.
+AUTH_LDAP_USER_ATTR_MAP = {
+    DJANGO_USER_ATTR_1: LDAP_USER_ATTR_1,
+    DJANGO_USER_ATTR_2: LDAP_USER_ATTR_2,
+    DJANGO_USER_ATTR_3: LDAP_USER_ATTR_3,
+    DJANGO_USER_ATTR_4: LDAP_USER_ATTR_4,
+}
+
+AUTH_LDAP_ALWAYS_UPDATE_USER = strtobool(
+    os.getenv(
+        'AUTH_LDAP_ALWAYS_UPDATE_USER', 'True'
+    )
+)
+
+#Set up the basic group parameters.
+LDAP_GROUP_OBJECTCLASS = os.getenv(
+    'LDAP_GROUP_OBJECTCLASS', '(objectClass=GroupOfUniqueNames)'
+)
+LDAP_GROUP_BASE_SEARCH = os.getenv(
+    'LDAP_GROUP_BASE_SEARCH', 'ou=groups,dc=example,dc=org'
+)
+
+AUTH_LDAP_GROUP_SEARCH = LDAPSearch(
+    LDAP_GROUP_BASE_SEARCH,
+    ldap.SCOPE_SUBTREE,
+    LDAP_GROUP_OBJECTCLASS
+)
+
+AUTH_LDAP_GROUP_TYPE = GroupOfUniqueNamesType(name_attr='cn')
+
+LDAP_GROUP_STAFF_DN = os.getenv(
+    'LDAP_GROUP_STAFF_DN', 'cn=staff,ou=groups,dc=example,dc=org'
+)
+
+AUTH_LDAP_USER_FLAGS_BY_GROUP = {
+    "is_staff": LDAP_GROUP_STAFF_DN,
+}
+
+AUTH_LDAP_MIRROR_GROUPS = True
+
+# Use LDAP group membership to calculate group permissions.
+AUTH_LDAP_FIND_GROUP_PERMS = strtobool(
+    os.getenv(
+        'AUTH_LDAP_FIND_GROUP_PERMS', 'True'
+    )
+)
+
+# Use OU attribute to assign groups membership
+IMN_AUTH_LDAP_OU_SEPARATOR = '|'
+IMN_AUTHORIZE_USERS_FROM_OU = True
