@@ -95,6 +95,10 @@ COPY ./templates /templates
 COPY multidump.sh /usr/local/tomcat/tmp
 COPY multidump-alt.sh /usr/local/tomcat/tmp
 
+# copy the fonts system-wide
+RUN mkdir -p /usr/local/share/fonts
+COPY ./font_esri/* /usr/local/share/fonts
+
 RUN apt-get update \
     && apt-get install -y procps less \
     && apt-get install -y python3 python3-pip python3-dev \
