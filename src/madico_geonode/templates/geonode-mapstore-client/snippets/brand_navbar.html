@@ -1,0 +1,58 @@
+{% extends "geonode-mapstore-client/snippets/brand_navbar.html" %}
+{% load static %}
+{% load static %}
+{% load get_menu_json %}
+{% load catalogue_urls %}
+{% block extra_style %}
+<style>
+    #gn-brand-navbar {
+        background: linear-gradient(135deg, var(--bg) 25%, transparent 25%) -50px 0,
+            linear-gradient(225deg, var(--bg) 25%, transparent 25%) -50px 0,
+            linear-gradient(315deg, var(--bg) 25%, transparent 25%),
+            linear-gradient(45deg, var(--bg) 25%, transparent 25%);
+        background-size: 32px 32px;
+        background-color: var(--gn-main-color,#333);
+    }
+    #gn-brand-navbar.gn-menu .gn-menu-content-left .gn-menu-list {
+        display: flex;
+        align-items: center;
+    }
+    #gn-brand-navbar.gn-menu .gn-menu-content-left .gn-menu-list img {
+        height: 2.7rem;
+        float: left;
+    }
+</style>
+{% endblock %}
+
+{% block left_menu %}
+<ul class="gn-menu-list">
+        <li>
+                <a href="{% block logo_href %}{% catalogue_home %}{% endblock %}">
+                        {% if custom_theme.logo and custom_theme.logo.url %}
+                                <img src="{{ custom_theme.logo.url }}">
+                        {% else %}
+                                <img src="{% block logo_src %}{% static 'img/EscudoMozambique.png' %}{% endblock %}">
+                        {% endif %}
+                </a>
+                <p style="font-size:.7em;float:left;font-weight:bold;margin-left:4px;color:#fffbaf;">
+                República de Moçambique
+                <br/>
+                Ministério da Terra e Ambiente
+                <br/>
+                Direcção Nacional de Terras e Desenvolvimento Territorial
+                </p>
+        </li>
+</ul>
+{% endblock %}
+
+{% block right_menu %}
+   <ul class="gn-menu-list">
+   <li>
+     <p style="font-size:1.0em;float:left;font-weight:bold;margin-left:4px;color:#fffbaf;">Com o apoio da Terra Firma</p>
+     <img src="{% static 'img/TerraFirma.jpg' %}"/>
+   </li>
+   {% for menu_item in USER_MENU %}
+         {% include './menu_item.html' with menu_item=menu_item align_right=True %}
+   {% endfor %}
+   </ul>
+{% endblock %}
