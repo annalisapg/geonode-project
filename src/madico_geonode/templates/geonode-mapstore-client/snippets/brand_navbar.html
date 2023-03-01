@@ -21,6 +21,12 @@
         height: 2.7rem;
         float: left;
     }
+    #register, #sign-in {
+        color: #fffbaf;
+    } 
+    #register:hover, #sign-in:hover {
+        color: var(--gn-main-hover-color,#000);
+    }
 </style>
 {% endblock %}
 
@@ -48,7 +54,7 @@
 {% block right_menu %}
    <ul class="gn-menu-list">
    <li>
-     <p style="font-size:1.0em;float:left;font-weight:bold;margin-left:4px;color:#fffbaf;">Com o apoio da Terra Firma</p>
+     <span style="font-size:1.0em;font-weight:bold;margin-left:4px;color:#fffbaf;">Com o apoio da Terra Firma</span>
      <img src="{% static 'img/TerraFirma.jpg' %}"/>
    </li>
    {% for menu_item in USER_MENU %}
