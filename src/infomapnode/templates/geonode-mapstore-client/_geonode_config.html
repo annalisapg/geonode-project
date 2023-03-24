@@ -3,6 +3,7 @@
 <script>
     window.__GEONODE_CONFIG__.overrideLocalConfig = function(localConfig, _) {
         // Here the localConfig can be overridden and/or extended
+        localConfig.miscSettings = {maxURLLength: 1};
         return localConfig;
     };
 </script>
