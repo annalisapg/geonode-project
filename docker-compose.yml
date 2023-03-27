@@ -13,6 +13,7 @@ x-common-django:
     - geoserver-data-dir:/geoserver_data/data
     - backup-restore:/backup_restore
     - data:/data
+    - logs:/logs
     - tmp:/tmp
   depends_on:
     db:
@@ -107,6 +108,7 @@ services:
       - geoserver-data-dir:/geoserver_data/data
       - backup-restore:/backup_restore
       - data:/data
+      - logs:/logs
       - tmp:/tmp
     restart: on-failure
     depends_on:
@@ -173,20 +175,62 @@ volumes:
     driver: local
   statics:
     name: ${COMPOSE_PROJECT_NAME}-statics
+    driver: local
+    driver_opts:
+      o: bind
+      type: none
+      device: /data/geonode/statics
   nginx-confd:
     name: ${COMPOSE_PROJECT_NAME}-nginxconfd
+    driver: local
+    driver_opts:
+      o: bind
+      type: none
+      device: /data/geonode/nginx/confd
   nginx-certificates:
     name: ${COMPOSE_PROJECT_NAME}-nginxcerts
+    driver: local
+    driver_opts:
+      o: bind
+      type: none
+      device: /data/geonode/nginx/certificates
   geoserver-data-dir:
     name: ${COMPOSE_PROJECT_NAME}-gsdatadir
+    driver: local
+    driver_opts:
+      o: bind
+      type: none
+      device: /data/geonode/geoserver_data/data
   dbdata:
     name: ${COMPOSE_PROJECT_NAME}-dbdata
+    driver: local
+    driver_opts:
+      o: bind
+      type: none
+      device: /data/geonode/dbdata
   dbbackups:
     name: ${COMPOSE_PROJECT_NAME}-dbbackups
   backup-restore:
     name: ${COMPOSE_PROJECT_NAME}-backup-restore
+    driver: local
+    driver_opts:
+      o: bind
+      type: none
+      device: /data/geonode/backup_restore
   data:
     name: ${COMPOSE_PROJECT_NAME}-data
+    driver: local
+    driver_opts:
+      o: bind
+      type: none
+      device: /data/geonode/data
+  logs:
+    name: ${COMPOSE_PROJECT_NAME}-logs
+    driver: local
+    driver_opts:
+      o: bind
+      type: none
+      device: /data/geonode/logs
   tmp:
     name: ${COMPOSE_PROJECT_NAME}-tmp
   rabbitmq:
